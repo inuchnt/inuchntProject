@@ -2,17 +2,37 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>いぬちのサイト</title>
-    <link rel='stylesheet' href="css/style.css" >  
+    <title>inuchnt Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="gray_ba">
-    <h1 class="hubsite">いぬちのハブサイト</h1>
-    <h2>気まぐれに作ったツールを大雑把に配布します<br>
-        バグたくさんあるよ
-    <br>
-    <a href="https://github.com/inuchnt"><img src="inuchntkeybord.jpg" alt="githubicon" width="120" height="100"></a>
-    </div>
+    <div class="bg-blur"></div> <header>
+        <div class="profile">
+            <div class="icon-circle"></div>
+            <h1>inuchnt</h1>
+            <p>ゆるりと、コードを綴る。</p>
+            <div class="sns-links">
+                <a href="https://github.com/inuchnt" class="sns-icon github"></a>
+                <a href="https://youtube.com/..." class="sns-icon youtube"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        <a href="https://github.com/inuchnt/inuchntProject" class="project-card mist-blue">
+            <span class="tag">GitHub</span>
+            <h2>inuchntProject</h2>
+            <p>メインのプロジェクト。じっくり育てています。</p>
+        </a>
+
+        <a href="https://www.youtube.com/..." class="project-card dusty-pink">
+            <span class="tag">YouTube</span>
+            <h2>いぬちのうち</h2>
+            <p>活動の記録。ゆったり更新中。</p>
+        </a>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,57 @@
-.gray_ba{
-    font-family: sans-serif;
-    background-color: gray ;
+:root {
+    --bg-color: #fdfbf7;
+    --text-color: #555;
+    --mist-blue: #e8eef2;
+    --dusty-pink: #f2e8e8;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* 背景に浮かぶふわふわの光 */
+.bg-blur {
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    width: 40%;
+    height: 40%;
+    background: radial-gradient(circle, rgba(232, 238, 242, 0.8) 0%, rgba(253, 251, 247, 0) 70%);
+    filter: blur(80px);
+    z-index: -1;
+}
+
+/* SNSの丸いアイコン */
+.sns-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.5s ease; /* ゆっくり動く */
+}
+
+.sns-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* 作品カード */
+.project-card {
+    text-decoration: none;
+    color: inherit;
+    padding: 2rem;
+    border-radius: 30px; /* 超角丸 */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); /* しっとりした動き */
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
